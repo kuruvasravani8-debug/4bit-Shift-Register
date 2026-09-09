@@ -1,43 +1,39 @@
-
-# [PROJECT NAME] - Project [NUMBER]
+# 4-bit Shift Register - Project 16
 
 ## 📌 Description
-This project implements [PROJECT NAME] using Verilog HDL. It is designed as a part of my VLSI learning journey to understand [CONCEPT NAME - e.g., Sequential Circuits].
+This project implements 4-bit SISO Shift Register using Verilog HDL. It is designed as a part of my VLSI learning journey to understand Sequential Circuits and data shifting operations.
 
-This is Project [NUMBER] of my 30 Days VLSI Challenge.
+This is Project 16 of my 30 Days VLSI Challenge.
 
 ## ⚙️ Working
-- Input: [WRITE INPUTS - e.g., clk, rst, a, b]
-- Output: [WRITE OUTPUTS - e.g., q, result]
-- Logic: [1 LINE - e.g., Counts up when up_down=1, down when 0]
+- Input: clk, rst, serial_in
+- Output: q[3:0], serial_out
+- Logic: On each clock pulse, data shifts from LSB to MSB. Serial input enters from one side.
 
 ## 📂 Files in Repo
 | File | Purpose |
 |---|---|
-| `[main_file].v` | Main design code |
-| `tb_[main_file].v` | Testbench for simulation |
+| `shift_register.v` | Main design code |
+| `tb_shift_register.v` | Testbench for simulation |
 | `README.md` | Project documentation |
 
 ## 💻 Code Snapshot
-Module Name: `[module_name]`
+Module Name: `shift_register`
 - Language: Verilog HDL
-- Design Type: [Combinational / Sequential]
+- Design Type: Sequential
 
 ## 📊 Simulation
-Simulated and verified using Xilinx Vivado / ModelSim.
+Simulated and verified using Xilinx Vivado.
 - Reset functionality verified
-- All cases tested with testbench
+- Serial shifting operation tested
 
 ## 🛠️ Tools Used
 - Verilog HDL
 - Xilinx Vivado
-- ModelSim / EDA Playground
 - GitHub for version control
 
 ## 👩‍💻 Author
 **Sravani Kuruvasravani8-debug | ECE Student | Kurnool**
-Aspiring VLSI Engineer | Learning Digital Design & Verilog
+Aspiring VLSI Engineer
 
-⭐ If you like my work, please give a star!
-
-#VLSI #Verilog #DigitalDesign #ECE #XilinxVivado #30DaysVLSI
+#VLSI #Verilog #ShiftRegister #DigitalDesign
